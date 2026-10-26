@@ -21,8 +21,6 @@
 5. [CRM·진열 제안](#crm진열-제안)
 6. [한계와 주의점](#한계와-주의점)
 
----
-
 ## 핵심 요약
 
 | 질문 | 발견 |
@@ -78,8 +76,6 @@ python analysis/02_rfm_clustering.py           # RFM + K-Means
 - 취소(C로 시작) 주문은 `is_cancel`로 표시하고, 판매·구매 분석에서는 제외합니다(차감하지 않음).
 - 제외 내역: `outputs/tables/exclusion_summary.csv`, `exclusion_by_code.csv`, `excluded_outlier_orders.csv`
 - 대량 구매(도매형) 고객 879명(15.0%, 금액 35.9%)을 따로 표시한 일반 고객 데이터셋도 만들었습니다(`22_general_customer_dataset.py`, `data/processed/retail_clean_general.csv`). 다만 아래 분석은 전체 고객 기준입니다.
-
----
 
 ## 분석 결과
 
@@ -245,8 +241,6 @@ python analysis/02_rfm_clustering.py           # RFM + K-Means
 - 함께 산 주문이 전체의 1% 이상인 조합 255개로 향상도(lift)를 계산했습니다.
 - **향상도 상위 10개와 건수 상위 10개는 하나도 겹치지 않습니다**(순위 상관 -0.11). 건수 상위는 인기 상품끼리(향상도 5~12), 향상도 상위는 세트형 상품(향상도 37~55)입니다.
 - 일반 고객(대량 구매 고객 제외)만으로 다시 계산해도 255쌍 중 248쌍이 1% 이상을 유지해 추천은 대량 고객 때문이 아닙니다.
-
----
 
 ## CRM·진열 제안
 
