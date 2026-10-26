@@ -1,0 +1,5 @@
+﻿method,groups,silhouette,calinski_harabasz,davies_bouldin,r2_between,min_group_share_pct,stability_ARI
+"규칙 기반 (5분위 점수, 7개 세그먼트)",7,0.1443,956.7439,1.5983,0.6753,6.3968,
+K-Means k=3,3,0.3578,2132.2184,1.0602,0.6067,14.4199,0.999
+K-Means k=4,4,0.3682,2022.0746,0.9903,0.6871,13.661,0.9964
+K-Means k=7,7,0.2811,1703.5264,1.0422,0.7874,4.3368,0.9923

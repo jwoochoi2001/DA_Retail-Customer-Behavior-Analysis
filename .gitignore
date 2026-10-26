@@ -1,0 +1,21 @@
+# 원본·대용량 데이터 (직접 data/raw 에 배치, data/processed 는 01 스크립트로 재생성)
+data/raw/*.xlsx
+data/processed/*.csv
+
+# 고객별(개별 고객 ID 포함) 결과 표 - 요약 표와 그림만 공유
+outputs/tables/basket_cluster_customers.csv
+outputs/tables/bulk_customer_flags.csv
+outputs/tables/churn_segment_customers.csv
+outputs/tables/churnrisk_customer_list.csv
+outputs/tables/core_cluster_customers.csv
+outputs/tables/core_crm_target_list.csv
+outputs/tables/repurchase_customers.csv
+outputs/tables/rfm_customers.csv
+outputs/tables/rfm_rule_segments.csv
+outputs/tables/rfm_top10_flag.csv
+outputs/tables/top5_customers.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

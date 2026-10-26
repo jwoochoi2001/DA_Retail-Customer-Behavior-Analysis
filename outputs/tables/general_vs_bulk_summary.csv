@@ -1,0 +1,4 @@
+﻿group,customers,rows,purchase_amount,orders,units_per_order_median,order_amount_median,order_amount_mean,products_per_order_median,orders_per_customer_median,cancel_row_rate_%,customer_share_%,amount_share_%,order_share_%
+전체,5875,803408,15966720.04,36540,154.0,302.92,436.97,15.0,3.0,2.18,100.0,100.0,100.0
+일반 고객,4996,689947,10229900.08,30499,137.0,280.0,335.42,16.0,3.0,2.04,85.04,64.07,83.47
+대량 구매 고객,879,113461,5736819.96,6041,384.0,539.18,949.65,7.0,3.0,3.04,14.96,35.93,16.53

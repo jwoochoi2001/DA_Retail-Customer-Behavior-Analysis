@@ -1,0 +1,25 @@
+﻿StockCode,reason_ko,treatment
+POST,배송료,exclude
+DOT,온라인 주문 배송료,exclude
+C2,운송료,exclude
+M,수기 입력 거래,exclude
+ADJUST,수기 조정,exclude
+ADJUST2,수기 조정,exclude
+AMAZONFEE,플랫폼 수수료,exclude
+B,부실채권 조정,exclude
+BANK CHARGES,은행 수수료,exclude
+CRUK,수수료,exclude
+D,할인 조정,exclude
+S,샘플,exclude
+PADS,패딩 관련 소액 기록,exclude
+TEST001,테스트 거래,exclude
+TEST002,테스트 거래,exclude
+GIFT_0001_10,상품권,exclude
+GIFT_0001_20,상품권,exclude
+GIFT_0001_30,상품권,exclude
+GIFT_0001_40,상품권,exclude
+GIFT_0001_50,상품권,exclude
+GIFT_0001_60,상품권,exclude
+GIFT_0001_70,상품권,exclude
+GIFT_0001_80,상품권,exclude
+GIFT_0001_90,상품권,exclude
