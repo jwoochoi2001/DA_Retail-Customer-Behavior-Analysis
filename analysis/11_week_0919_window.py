@@ -6,7 +6,7 @@
 import pandas as pd, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-plt.rcParams["font.family"] = "Malgun Gothic"; plt.rcParams["axes.unicode_minus"] = False
+import _plot_style  # 한글 글꼴·마이너스 기호 설정 (analysis/_plot_style.py)
 
 BASE = pd.Timestamp("2011-09-19")                       # 기준 주 시작(월요일)
 assert BASE.weekday() == 0

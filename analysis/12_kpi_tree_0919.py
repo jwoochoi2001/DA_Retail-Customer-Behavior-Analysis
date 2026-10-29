@@ -9,7 +9,7 @@ import numpy as np, pandas as pd, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
-plt.rcParams["font.family"] = "Malgun Gothic"; plt.rcParams["axes.unicode_minus"] = False
+import _plot_style  # 한글 글꼴·마이너스 기호 설정 (analysis/_plot_style.py)
 
 PREV, BASE = pd.Timestamp("2011-09-12"), pd.Timestamp("2011-09-19")
 df = pd.read_csv("data/processed/retail_clean.csv", parse_dates=["invoice_date"])

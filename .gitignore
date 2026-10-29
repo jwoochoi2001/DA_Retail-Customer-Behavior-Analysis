@@ -1,5 +1,4 @@
-# 원본·대용량 데이터 (직접 data/raw 에 배치, data/processed 는 01 스크립트로 재생성)
-data/raw/*.xlsx
+# 처리된 대용량 데이터 (01·20·22 스크립트로 재생성). 원본 data/raw/online_retail_II.xlsx 는 저장소에 포함
 data/processed/*.csv
 
 # 고객별(개별 고객 ID 포함) 결과 표 - 요약 표와 그림만 공유

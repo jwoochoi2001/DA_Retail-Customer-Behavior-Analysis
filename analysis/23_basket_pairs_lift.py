@@ -12,7 +12,7 @@ import numpy as np, pandas as pd, matplotlib
 from scipy import sparse
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-plt.rcParams["font.family"] = "Malgun Gothic"; plt.rcParams["axes.unicode_minus"] = False
+import _plot_style  # 한글 글꼴·마이너스 기호 설정 (analysis/_plot_style.py)
 
 SUP = 0.01
 GENERIC = set("RED BLUE GREEN PINK YELLOW WHITE BLACK PURPLE ORANGE IVORY CREAM SILVER GOLD BROWN GREY GRAY TURQUOISE RETROSPOT "

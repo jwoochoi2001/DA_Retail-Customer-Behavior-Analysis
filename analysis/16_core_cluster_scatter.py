@@ -8,7 +8,7 @@
 import numpy as np, pandas as pd, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-plt.rcParams["font.family"] = "Malgun Gothic"; plt.rcParams["axes.unicode_minus"] = False
+import _plot_style  # 한글 글꼴·마이너스 기호 설정 (analysis/_plot_style.py)
 
 rfm = pd.read_csv("outputs/tables/rfm_customers.csv")
 core_id = rfm.groupby("cluster").M.mean().idxmax()

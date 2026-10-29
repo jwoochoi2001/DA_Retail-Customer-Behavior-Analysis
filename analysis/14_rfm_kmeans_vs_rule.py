@@ -13,7 +13,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import (adjusted_rand_score, calinski_harabasz_score, davies_bouldin_score,
                              normalized_mutual_info_score, silhouette_samples, silhouette_score)
 from sklearn.preprocessing import StandardScaler
-plt.rcParams["font.family"] = "Malgun Gothic"; plt.rcParams["axes.unicode_minus"] = False
+import _plot_style  # 한글 글꼴·마이너스 기호 설정 (analysis/_plot_style.py)
 
 rfm = pd.read_csv("outputs/tables/rfm_customers.csv")[["customer_id", "R", "F", "M"]]
 X = StandardScaler().fit_transform(np.log1p(rfm[["R", "F", "M"]]))

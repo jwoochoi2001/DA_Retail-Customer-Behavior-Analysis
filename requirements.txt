@@ -1,0 +1,7 @@
+# 분석 스크립트 실행에 필요한 라이브러리 (개발 환경: Python 3.14, pandas 2.3.3, numpy 2.5.0, scipy 1.18.0, scikit-learn 1.9.0, matplotlib 3.11.0, openpyxl 3.1.5)
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+openpyxl>=3.1

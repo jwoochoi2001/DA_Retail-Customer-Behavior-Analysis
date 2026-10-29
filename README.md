@@ -38,6 +38,8 @@
 ```
 .
 ├── CLAUDE.md                  # 작업 규칙
+├── run_all.py                 # 전체 스크립트 순서대로 실행
+├── requirements.txt           # 필요 라이브러리
 ├── analysis/                  # 분석 스크립트 (01 – 23, 번호 순서대로 실행)
 ├── data/
 │   ├── raw/                   # 원본 (수정하지 않음)
@@ -47,15 +49,20 @@
     └── tables/                # 결과 표 (CSV)
 ```
 
-프로젝트 루트에서 실행합니다. 필요 라이브러리: `pandas`, `numpy`, `openpyxl`, `scikit-learn`, `scipy`, `matplotlib`.
+원본 데이터(`data/raw/online_retail_II.xlsx`, 약 44MB)를 저장소에 포함했기 때문에 `clone` 후 바로 실행할 수 있습니다.
 
 ```bash
-python analysis/01_build_analysis_dataset.py   # 전처리 (가장 먼저)
-python analysis/02_rfm_clustering.py           # RFM + K-Means
-# 이후 03 – 23 번호 순서대로 (각 스크립트 상단 docstring에 선행 스크립트 명시)
+git clone https://github.com/jwoochoi2001/DA_Retail-Customer-Behavior-Analysis.git
+cd DA_Retail-Customer-Behavior-Analysis
+pip install -r requirements.txt
+python run_all.py                  # analysis/01 – 23 을 번호 순서대로 모두 실행
 ```
 
-원본 `data/raw/online_retail_II.xlsx`(약 45MB)는 저장소에 포함하지 않는 것을 전제로 하며, 직접 `data/raw/`에 두어야 합니다.
+- `python run_all.py --from 15`: 15번부터 실행(앞 단계 결과가 이미 있을 때), `python run_all.py --only 01 02`: 지정한 번호만 실행
+- 첫 단계(01)가 엑셀을 읽는 데 시간이 걸리며, 한 단계라도 실패하면 즉시 멈추고 오류를 보여 줍니다.
+- 처리된 데이터(`data/processed/*.csv`)와 고객 ID가 든 결과 표는 저장소에 없고 실행하면 만들어집니다.
+- 그래프의 한글 글꼴은 설치된 글꼴(Malgun Gothic, AppleGothic, NanumGothic, Noto Sans CJK KR) 중 하나를 자동 선택합니다. 없으면 한글이 네모로 보입니다(`analysis/_plot_style.py`).
+- 개발 환경: Python 3.14, pandas 2.3.3, numpy 2.5.0, scipy 1.18.0, scikit-learn 1.9.0, matplotlib 3.11.0, openpyxl 3.1.5. 데이터는 Online Retail II 데이터셋(영국 온라인 소매업체 거래)과 같은 구조이며 강의에서 제공받은 파일입니다. 재배포 조건은 원 출처의 라이선스를 확인하세요.
 
 ## 데이터 전처리
 
