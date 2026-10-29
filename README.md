@@ -59,7 +59,7 @@ python run_all.py                  # analysis/01 – 23 을 번호 순서대로 
 ```
 
 - `python run_all.py --from 15`: 15번부터 실행(앞 단계 결과가 이미 있을 때), `python run_all.py --only 01 02`: 지정한 번호만 실행
-- 첫 단계(01)가 엑셀을 읽는 데 시간이 걸리며, 한 단계라도 실패하면 즉시 멈추고 오류를 보여 줍니다.
+- 전체 실행에는 약 5–6분이 걸립니다(검증 환경 기준). 한 단계라도 실패하면 즉시 멈추고 오류를 보여 줍니다.
 - 처리된 데이터(`data/processed/*.csv`)와 고객 ID가 든 결과 표는 저장소에 없고 실행하면 만들어집니다.
 - 그래프의 한글 글꼴은 설치된 글꼴(Malgun Gothic, AppleGothic, NanumGothic, Noto Sans CJK KR) 중 하나를 자동 선택합니다. 없으면 한글이 네모로 보입니다(`analysis/_plot_style.py`).
 - 개발 환경: Python 3.14, pandas 2.3.3, numpy 2.5.0, scipy 1.18.0, scikit-learn 1.9.0, matplotlib 3.11.0, openpyxl 3.1.5. 데이터는 Online Retail II 데이터셋(영국 온라인 소매업체 거래)과 같은 구조이며 강의에서 제공받은 파일입니다. 재배포 조건은 원 출처의 라이선스를 확인하세요.
